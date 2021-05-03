@@ -1,0 +1,18 @@
+.wrapper {
+  display: grid;
+  grid-template:
+    "header header" auto
+    "nav main" 1fr / auto 1fr;
+}
+
+.wrapper > header {
+  grid-area: header;
+}
+
+.wrapper > nav {
+  grid-area: nav;
+}
+
+.wrapper > main {
+  grid-area: main;
+}
