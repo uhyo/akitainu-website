@@ -14,7 +14,7 @@ export default function Home() {
         <a href="https://www.npmjs.com/package/akitainu" rel="external">
           <img
             src="https://img.shields.io/npm/v/akitainu"
-            alt="Badge showing the current version of akitainu"
+            alt="npm"
             height="20"
           />
         </a>
