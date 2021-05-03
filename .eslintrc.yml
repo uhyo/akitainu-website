@@ -1,0 +1,6 @@
+parser: "@typescript-eslint/parser"
+plugins:
+  - "@typescript-eslint"
+  - jsx-a11y
+rules:
+  "@typescript-eslint/rule-name": error
