@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Code } from "../../../components/Code";
 import { PackagePage } from "../../../components/PackagePage";
 
@@ -10,12 +11,18 @@ export default function AkitainuPackage() {
       <Code language="sh">npm install -D akitainu</Code>
 
       <h2>CLI Usage</h2>
-      {/* TODO: link */}
-      <p>Prepare an akitainu config file, then run:</p>
+      <p>
+        Prepare an <Link href="/docs/config">akitainu config file</Link>, then
+        run:
+      </p>
       <Code language="sh">npx akitainu</Code>
       <p>
         (or, when running from npm scripts, just <code>akitainnu</code> is
         enough.
+      </p>
+      <p>
+        If there is no error, process exists with exit code 0. If there is an
+        error, process exists with exit code 64.
       </p>
 
       <h2>Programmatic Use</h2>

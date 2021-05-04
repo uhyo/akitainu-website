@@ -142,6 +142,13 @@ export default function ConfigPage() {
         name and config given to that package. <code>"package-name"</code> is
         equivalent to <code>["package-name", {"{}"}]</code>.
       </p>
+      <p>
+        Package name is to be <code>require</code>d/<code>import</code>ed from
+        the akitainu runtime. However, names that start with{" "}
+        <code>akitainu:</code> are considered <em>internal packages</em> that
+        come along with the <code>akitainu</code> package and do not require
+        installation of additional packages.
+      </p>
     </Fragment>
   );
 }
