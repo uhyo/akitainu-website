@@ -15,4 +15,5 @@
 
 .wrapper > main {
   grid-area: main;
+  padding: 8px;
 }

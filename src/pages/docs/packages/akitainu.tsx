@@ -28,6 +28,18 @@ export default function AkitainuPackage() {
         <code>true</code> if there is no error, and <code>false</code>{" "}
         otherwise.
       </p>
+      <Code language="ts">
+        {`
+import { run } from "akitainu";
+
+const result = await run();
+if (result) {
+  console.log("Lint succeeded!");
+} else {
+  console.log("There is an error! :(");
+}
+        `.trim()}
+      </Code>
     </PackagePage>
   );
 }
