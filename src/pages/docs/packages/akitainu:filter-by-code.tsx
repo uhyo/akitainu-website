@@ -4,7 +4,7 @@ import { PackagePage } from "../../../components/PackagePage";
 
 export default function AkitainuByCodeFilterPage() {
   return (
-    <PackagePage name="akitainu:by-code-filter" internal>
+    <PackagePage name="akitainu:filter-by-code" internal>
       <p>
         Internal <Link href="/docs/config#filter">filter</Link> package for
         filtering out errors that have or does not have certain error code.
@@ -22,11 +22,11 @@ export default function AkitainuByCodeFilterPage() {
         {`
 {
   rules: {
-    source: ["akitainu:static-source", {
+    source: ["akitainu:source-static", {
       files: ["./src/**/*.ts]
     }],
     checker: "akitainu-eslint-checker",
-    filter: ["akitainu:by-code-filter", {
+    filter: ["akitainu:filter-by-code", {
       exclude: ["@typescript-eslint/no-explicit-any"]
     }]
   }

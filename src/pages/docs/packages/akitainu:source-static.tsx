@@ -4,7 +4,7 @@ import { PackagePage } from "../../../components/PackagePage";
 
 export default function AkitainuStaticSourcePackage() {
   return (
-    <PackagePage name="akitainu:static-source" internal>
+    <PackagePage name="akitainu:source-static" internal>
       <p>
         Internal <Link href="/docs/config#source">source</Link> package for
         statically defining what files to lint.
@@ -17,7 +17,7 @@ export default function AkitainuStaticSourcePackage() {
         {`
 {
   rules: {
-    source: ["akitainu:static-source", {
+    source: ["akitainu:source-static", {
       files: ["./src/**/*.ts"]
     }],
     checker: /* ... */

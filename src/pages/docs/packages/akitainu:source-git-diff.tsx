@@ -4,7 +4,7 @@ import { PackagePage } from "../../../components/PackagePage";
 
 export default function AkitainuGitDiffSourcePage() {
   return (
-    <PackagePage name="akitainu:git-diff-source" internal>
+    <PackagePage name="akitainu:source-git-diff" internal>
       <p>
         Internal <Link href="/docs/config#source">source</Link> package for
         linting files that have diff between certain git commits.
@@ -18,7 +18,7 @@ export default function AkitainuGitDiffSourcePage() {
         {`
 {
   rules: {
-    source: ["akitainu:git-diff-source", {
+    source: ["akitainu:source-git-diff", {
       before: "master",
       after: "HEAD"
     }],
@@ -42,7 +42,7 @@ export default function AkitainuGitDiffSourcePage() {
         {`
 {
   rules: {
-    source: ["akitainu:git-diff-source", {
+    source: ["akitainu:source-git-diff", {
       before: "origin/" + process.env.GITHUB_BASE_REF
       after: "HEAD"
     }],

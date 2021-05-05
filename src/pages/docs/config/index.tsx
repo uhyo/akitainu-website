@@ -58,7 +58,7 @@ export default function ConfigPage() {
         {`
 {
   rules: [{
-    source: ["akitainu:static-source", {
+    source: ["akitainu:source-static", {
       files: ["./src/**/*.ts", "./src/**/*.tsx"]
     }],
     checker: "akitainu-checker-eslint"
@@ -78,7 +78,7 @@ export default function ConfigPage() {
         {`
 {
   rules: [{
-    source: ["akitainu:static-source", {
+    source: ["akitainu:source-static", {
       files: ["./src/**/*.ts", "./src/**/*.tsx"]
     }],
     checker: "akitainu-checker-eslint"
@@ -99,11 +99,11 @@ export default function ConfigPage() {
         {`
 {
   rules: [{
-    source: ["akitainu:static-source", {
+    source: ["akitainu:source-static", {
       files: ["./src/**/*.ts", "./src/**/*.tsx"]
     }],
     checker: "akitainu-checker-eslint",
-    filter: ["akitaiu:by-code-filter", {
+    filter: ["akitaiu:filter-by-code", {
       // do not report no-explicit-any errors
       exclude: "@typescript-eslint/no-explicit-any"
     }]
@@ -115,14 +115,14 @@ export default function ConfigPage() {
       <p>
         <b>Reporter</b> defines how to output lint errors. If omitted,{" "}
         <code>reporters</code> defaults to{" "}
-        <code>akitainu:pretty-console-reporter</code> that prints the result to
+        <code>akitainu:reporter-pretty-console</code> that prints the result to
         console.
       </p>
       <Code language="ts">
         {`
 {
   reporters: [
-    "akitainu:pretty-console-reporter"
+    "akitainu:reporter-pretty-console"
   ]
 }
         `.trim()}
