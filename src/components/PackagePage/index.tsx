@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 type Props = {
   /**
    * Package name.
@@ -13,6 +15,9 @@ type Props = {
 export const PackagePage: React.VFC<Props> = ({ name, internal, children }) => {
   return (
     <div>
+      <Head>
+        <title>Package: {name}</title>
+      </Head>
       <h1>Package: {name}</h1>
       {!internal && (
         <div>

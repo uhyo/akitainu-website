@@ -1,4 +1,5 @@
 import React from "react";
+import { GlobalNavigation } from "../GlobalNavigation";
 import classes from "./PageLayout.module.css";
 
 export const PageLayout: React.FC<{
@@ -8,7 +9,9 @@ export const PageLayout: React.FC<{
     <div className={classes.wrapper}>
       <header>Header</header>
       <main>{children}</main>
-      <nav>Navigation</nav>
+      <nav>
+        <GlobalNavigation />
+      </nav>
     </div>
   );
 };
