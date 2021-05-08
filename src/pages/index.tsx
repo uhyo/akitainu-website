@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import classes from "../styles/Home.module.css";
 
 export default function Home() {
   const title = "Akitainu: unified linting toolkit for node.js projects";
@@ -10,6 +12,16 @@ export default function Home() {
       </Head>
 
       <h1>{title}</h1>
+      <figure className={classes.akitainu}>
+        <Image src="/images/akitainu_irasutoya.png" width={170} height={191} />
+        <figcaption>
+          Image of Akitainu (image&nbsp;credit:{" "}
+          <a href="https://www.irasutoya.com/" rel="external">
+            いらすとや
+          </a>
+          )
+        </figcaption>
+      </figure>
       <div>
         <a href="https://www.npmjs.com/package/akitainu" rel="external">
           <img
