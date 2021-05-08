@@ -1,9 +1,13 @@
+import Head from "next/head";
 import { Fragment } from "react";
 import { Code } from "../../components/Code";
 
 export default function basicESLintTypeScriptRecipe() {
   return (
     <Fragment>
+      <Head>
+        <title>Recipe: Basic ESLint and TypeScript Settings</title>
+      </Head>
       <h1>Recipe: Basic ESLint and TypeScript Settings</h1>
       <p>
         This page describes how to set up Akitainu so that you can run ESLint
@@ -42,7 +46,7 @@ export default function basicESLintTypeScriptRecipe() {
 }`}
       </Code>
 
-      <h3>Run Akitainu</h3>
+      <h2>Run Akitainu</h2>
       <p>
         Run Akitainu by any means you like. For example, you can register an npm
         script:
@@ -57,7 +61,7 @@ export default function basicESLintTypeScriptRecipe() {
         specified.
       </p>
       <p>
-        This command exists with a non-zero exit code when there is any lint
+        This command exits with a non-zero exit code when there is any lint
         error.
       </p>
       <p>

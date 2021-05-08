@@ -2,18 +2,21 @@ import React, { useMemo } from "react";
 import { PrismAsyncLight } from "react-syntax-highlighter";
 import shellLanguage from "react-syntax-highlighter/dist/cjs/languages/prism/shell-session";
 import typescriptLanguage from "react-syntax-highlighter/dist/cjs/languages/prism/typescript";
+import yamlLanguage from "react-syntax-highlighter/dist/cjs/languages/prism/yaml";
 import prism from "react-syntax-highlighter/dist/cjs/styles/prism/prism";
 import classes from "./Code.module.css";
 
-type Language = "ts" | "sh";
+type Language = "ts" | "sh" | "yaml";
 
 const langMap: Record<Language, string> = {
   ts: "typescript",
   sh: "shell-session",
+  yaml: "yaml",
 };
 
 PrismAsyncLight.registerLanguage(langMap.ts, typescriptLanguage);
 PrismAsyncLight.registerLanguage(langMap.sh, shellLanguage);
+PrismAsyncLight.registerLanguage(langMap.yaml, yamlLanguage);
 
 const preCustomStyle = {
   position: "relative",
