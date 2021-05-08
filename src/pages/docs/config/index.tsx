@@ -105,7 +105,7 @@ export default function ConfigPage() {
     checker: "akitainu-checker-eslint",
     filter: ["akitaiu:filter-by-code", {
       // do not report no-explicit-any errors
-      exclude: "@typescript-eslint/no-explicit-any"
+      exclude: ["@typescript-eslint/no-explicit-any"]
     }]
   }]
 }`.trim()}

@@ -42,6 +42,15 @@ export const GlobalNavigation: React.VFC = () => {
           </Link>
         </li>
       </ul>
+      <hr />
+      <h2>Recipes</h2>
+      <ul>
+        <li>
+          <Link href="/recipes/basic-eslint-ts">
+            Basic ESLint and TypeScript Settings
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };
