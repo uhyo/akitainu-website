@@ -8,7 +8,6 @@ export default function Home() {
     <div>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <h1>{title}</h1>
@@ -44,6 +43,13 @@ export default function Home() {
         settings. Akitainu provides a pull request-based gradual adoption
         strategy in which only changed files are checked with the tightened
         setting. This way, existing code is gradually fixed as it is modified.
+      </p>
+
+      <h2>Contributions</h2>
+      <p>
+        Any kind of contributions are super welcome, including bug reports,
+        feature suggestions, bug fixes and feature implementations. Also,
+        suggestions on API design are welcome too.
       </p>
     </div>
   );

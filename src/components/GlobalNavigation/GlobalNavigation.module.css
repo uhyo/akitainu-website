@@ -18,7 +18,11 @@
   padding: 0 0 0 1em;
   list-style-type: none;
   border-left: 1px dashed #aaaaaa;
-  line-height: 1.6;
+  line-height: 1.2;
+}
+
+.wrapper ul li {
+  margin: 8px 0;
 }
 
 .wrapper hr {

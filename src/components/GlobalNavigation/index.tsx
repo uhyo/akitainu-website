@@ -23,6 +23,11 @@ export const GlobalNavigation: React.VFC = () => {
             akitainu-checker-typescript
           </Link>
         </li>
+        <li>
+          <Link href="/docs/packages/akitainu-reporter-github-pr-review">
+            akitainu-reporter-github-pr-review
+          </Link>
+        </li>
       </ul>
       <h2>Internal Packages</h2>
       <ul>
@@ -42,7 +47,6 @@ export const GlobalNavigation: React.VFC = () => {
           </Link>
         </li>
       </ul>
-      <hr />
       <h2>Recipes</h2>
       <ul>
         <li>
@@ -59,6 +63,19 @@ export const GlobalNavigation: React.VFC = () => {
           <Link href="/recipes/tighten-typescript-settings">
             Recipe: Tightening TypeScript Settings
           </Link>
+        </li>
+      </ul>
+      <h2>Others</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/uhyo/akitainu" rel="external">
+            GitHub (akitainu)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/uhyo/akitainu-website" rel="external">
+            GitHub (this website)
+          </a>
         </li>
       </ul>
     </div>
