@@ -11,6 +11,8 @@
 
 .wrapper > nav {
   grid-area: nav;
+  max-width: 15vw;
+  min-width: min-content;
 }
 
 .wrapper > main {

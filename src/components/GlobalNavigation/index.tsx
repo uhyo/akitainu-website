@@ -55,6 +55,11 @@ export const GlobalNavigation: React.VFC = () => {
             Recipe: Tightening ESLint Settings
           </Link>
         </li>
+        <li>
+          <Link href="/recipes/tighten-typescript-settings">
+            Recipe: Tightening TypeScript Settings
+          </Link>
+        </li>
       </ul>
     </div>
   );
