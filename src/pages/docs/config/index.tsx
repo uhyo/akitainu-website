@@ -134,8 +134,8 @@ export default function ConfigPage() {
       </Code>
       <p>
         The PackageConfig type is used in akitainu config to specify what
-        package to use as source, checker, filter or reporter. It also allows
-        passing options to the specified package.
+        package to use as source, checker, filter or reporter. The latter form
+        allows passing options to the specified package.
       </p>
       <p>
         PackageConfig is either a package name as a string or a pair of package
