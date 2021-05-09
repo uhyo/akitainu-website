@@ -4,6 +4,24 @@ import classes from "./GlobalNavigation.module.css";
 export const GlobalNavigation: React.VFC = () => {
   return (
     <div className={classes.wrapper}>
+      <h1>Recipes</h1>
+      <ul>
+        <li>
+          <Link href="/recipes/basic-eslint-ts">
+            Basic ESLint and TypeScript Settings
+          </Link>
+        </li>
+        <li>
+          <Link href="/recipes/tighten-eslint-settings">
+            Recipe: Tightening ESLint Settings
+          </Link>
+        </li>
+        <li>
+          <Link href="/recipes/tighten-typescript-settings">
+            Recipe: Tightening TypeScript Settings
+          </Link>
+        </li>
+      </ul>
       <h1>Docs</h1>
       <p>
         <Link href="/docs/config">Configuration</Link>
@@ -47,25 +65,7 @@ export const GlobalNavigation: React.VFC = () => {
           </Link>
         </li>
       </ul>
-      <h2>Recipes</h2>
-      <ul>
-        <li>
-          <Link href="/recipes/basic-eslint-ts">
-            Basic ESLint and TypeScript Settings
-          </Link>
-        </li>
-        <li>
-          <Link href="/recipes/tighten-eslint-settings">
-            Recipe: Tightening ESLint Settings
-          </Link>
-        </li>
-        <li>
-          <Link href="/recipes/tighten-typescript-settings">
-            Recipe: Tightening TypeScript Settings
-          </Link>
-        </li>
-      </ul>
-      <h2>Others</h2>
+      <h1>External Links</h1>
       <ul>
         <li>
           <a href="https://github.com/uhyo/akitainu" rel="external">

@@ -19,3 +19,16 @@
   grid-area: main;
   padding: 8px;
 }
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template:
+      "header" auto
+      "main" auto
+      "nav" auto / auto;
+  }
+
+  .wrapper > nav {
+    max-width: 100%;
+  }
+}
