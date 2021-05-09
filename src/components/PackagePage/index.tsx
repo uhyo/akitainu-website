@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { Metadata } from "../Metadata";
 
 type Props = {
   /**
@@ -15,9 +15,7 @@ type Props = {
 export const PackagePage: React.VFC<Props> = ({ name, internal, children }) => {
   return (
     <div>
-      <Head>
-        <title>Package: {name}</title>
-      </Head>
+      <Metadata title={`Package: ${name}`} />
       <h1>Package: {name}</h1>
       {!internal && (
         <div>

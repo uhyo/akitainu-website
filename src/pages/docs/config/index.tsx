@@ -1,13 +1,11 @@
-import Head from "next/head";
 import { Fragment } from "react";
 import { Code } from "../../../components/Code";
+import { Metadata } from "../../../components/Metadata";
 
 export default function ConfigPage() {
   return (
     <Fragment>
-      <Head>
-        <title>Akitainu Configuration</title>
-      </Head>
+      <Metadata title="Akitainu Configuration" />
       <h1>Akitainu Configuration</h1>
       <p>
         Akitainu supports JSON format (<code>.akitaiunrc.json</code>), YAML

@@ -1,13 +1,11 @@
-import Head from "next/head";
 import { Fragment } from "react";
 import { Code } from "../../components/Code";
+import { Metadata } from "../../components/Metadata";
 
 export default function basicESLintTypeScriptRecipe() {
   return (
     <Fragment>
-      <Head>
-        <title>Recipe: Basic ESLint and TypeScript Settings</title>
-      </Head>
+      <Metadata title="Recipe: Basic ESLint and TypeScript Settings" />
       <h1>Recipe: Basic ESLint and TypeScript Settings</h1>
       <p>
         This page describes how to set up Akitainu so that you can run ESLint

@@ -1,14 +1,12 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Fragment } from "react";
 import { Code } from "../../components/Code";
+import { Metadata } from "../../components/Metadata";
 
 export default function tighteningTypeScriptSettingsPage() {
   return (
     <Fragment>
-      <Head>
-        <title>Recipe: Tightening TypeScript Settings</title>
-      </Head>
+      <Metadata title="Recipe: Tightening TypeScript Settings" />
       <h1>Recipe: Tightening TypeScript Settings</h1>
       <p>
         This page describes how to set up Akitainu for gradually applying

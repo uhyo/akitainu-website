@@ -1,14 +1,12 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Fragment } from "react";
 import { Code } from "../../components/Code";
+import { Metadata } from "../../components/Metadata";
 
 export default function tighteningESLintSettingsPage() {
   return (
     <Fragment>
-      <Head>
-        <title>Recipe: Tightening ESLint Settings</title>
-      </Head>
+      <Metadata title="Recipe: Tightening ESLint Settings" />
       <h1>Recipe: Tightening ESLint Settings</h1>
       <p>
         This page describes how to set up Akitainu for gradually applying

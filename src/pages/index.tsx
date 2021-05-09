@@ -1,14 +1,12 @@
-import Head from "next/head";
 import Image from "next/image";
+import { Metadata } from "../components/Metadata";
 import classes from "../styles/Home.module.css";
 
 export default function Home() {
   const title = "Akitainu: unified linting toolkit for node.js projects";
   return (
     <div>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      <Metadata title={title} />
 
       <h1>{title}</h1>
       <figure className={classes.akitainu}>
